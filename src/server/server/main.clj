@@ -1,6 +1,6 @@
 (ns server.main
   (:require
-   [taoensso.telemere.timbre :as log]
+   [taoensso.telemere :refer [log!]]
    [shadow.cljs.devtools.api :as shadow-api]
    [shadow.cljs.devtools.server :as shadow-server]))
 
@@ -10,5 +10,5 @@
   (shadow-api/watch :browser))
 
 (defn -main []
-  (log/info "starting shadow")
+  (log! "starting shadow")
   (start-shadow!))
