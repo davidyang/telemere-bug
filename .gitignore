@@ -1,0 +1,5 @@
+public/
+.clj-kondo/
+.cpcache/
+.lsp/
+.shadow-cljs/

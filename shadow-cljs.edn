@@ -1,0 +1,9 @@
+{:nrepl  {:middleware []}
+
+ :builds {:browser
+          {:target :browser
+           :deps {:aliases [:browser]}
+           :output-dir "public/static/gen/js/dev"
+           :asset-path "/static/gen/js/dev"
+           :modules {:main {:entries [browser.main]
+                            :init-fn browser.main/init}}}}}

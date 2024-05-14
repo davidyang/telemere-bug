@@ -1,0 +1,14 @@
+{:paths ["src/common"]
+
+ :deps {com.taoensso/encore                 {:mvn/version "3.110.0"}
+        com.taoensso/sente                  {:mvn/version "1.19.2"}
+        com.taoensso/slf4j-telemere         {:mvn/version "1.0.0-beta12"}
+        com.taoensso/telemere               {:mvn/version "1.0.0-beta12"}
+        com.taoensso/truss                  {:mvn/version "1.11.0"}
+        com.taoensso/tufte                  {:mvn/version "2.6.3"}
+        org.clojure/clojure                 {:mvn/version "1.12.0-alpha11"}
+        thheller/shadow-cljs                {:mvn/version "2.28.6"}}
+
+ :aliases
+ {:server {:extra-paths ["src/server"]}
+  :browser {:extra-paths ["src/browser"]}}}
